@@ -11,7 +11,7 @@ export default class SearchInput extends React.Component {
 
     handleChangeText = text => {
         this.setState({ text });
-    };
+    }
 
     handleSubmitEditing = () => {
         const { onSubmit } = this.props;
@@ -21,7 +21,7 @@ export default class SearchInput extends React.Component {
 
         onSubmit(text);
         this.setState({ text: '' });
-    };
+    }
 
     render() {
         const { placeholder } = this.props;
